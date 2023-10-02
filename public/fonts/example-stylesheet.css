@@ -1,216 +1,235 @@
 @font-face {
-    font-family: 'MyFont';
-    src: url('MyFontBoldCondensed.eot');
-    src: local('MyFont Condensed Bold'), local('MyFontBoldCondensed'),
-        url('MyFontBoldCondensed.eot?#iefix') format('embedded-opentype'),
-        url('MyFontBoldCondensed.woff2') format('woff2'),
-        url('MyFontBoldCondensed.woff') format('woff'),
-        url('MyFontBoldCondensed.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
+  font-family: 'MyFont';
+  src: url('MyFontBoldCondensed.eot');
+  src:
+    local('MyFont Condensed Bold'),
+    local('MyFontBoldCondensed'),
+    url('MyFontBoldCondensed.eot?#iefix') format('embedded-opentype'),
+    url('MyFontBoldCondensed.woff2') format('woff2'),
+    url('MyFontBoldCondensed.woff') format('woff'),
+    url('MyFontBoldCondensed.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'MyFont';
-    src: url('MyFontBlackCondensed.eot');
-    src: local('MyFont Condensed Black'), local('MyFontBlackCondensed'),
-        url('MyFontBlackCondensed.eot?#iefix') format('embedded-opentype'),
-        url('MyFontBlackCondensed.woff2') format('woff2'),
-        url('MyFontBlackCondensed.woff') format('woff'),
-        url('MyFontBlackCondensed.ttf') format('truetype');
-    font-weight: 900;
-    font-style: normal;
+  font-family: 'MyFont';
+  src: url('MyFontBlackCondensed.eot');
+  src:
+    local('MyFont Condensed Black'),
+    local('MyFontBlackCondensed'),
+    url('MyFontBlackCondensed.eot?#iefix') format('embedded-opentype'),
+    url('MyFontBlackCondensed.woff2') format('woff2'),
+    url('MyFontBlackCondensed.woff') format('woff'),
+    url('MyFontBlackCondensed.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'MyFontCyr';
-    src: url('MyFontCyr-Bold.eot');
-    src: local('MyFontCyr-Bold'),
-        url('MyFontCyr-Bold.eot?#iefix') format('embedded-opentype'),
-        url('MyFontCyr-Bold.woff2') format('woff2'),
-        url('MyFontCyr-Bold.woff') format('woff'),
-        url('MyFontCyr-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
+  font-family: 'MyFontCyr';
+  src: url('MyFontCyr-Bold.eot');
+  src:
+    local('MyFontCyr-Bold'),
+    url('MyFontCyr-Bold.eot?#iefix') format('embedded-opentype'),
+    url('MyFontCyr-Bold.woff2') format('woff2'),
+    url('MyFontCyr-Bold.woff') format('woff'),
+    url('MyFontCyr-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'MyFontCyr';
-    src: url('MyFontCyr-Light.eot');
-    src: local('MyFontCyr-Light'),
-        url('MyFontCyr-Light.eot?#iefix') format('embedded-opentype'),
-        url('MyFontCyr-Light.woff2') format('woff2'),
-        url('MyFontCyr-Light.woff') format('woff'),
-        url('MyFontCyr-Light.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
+  font-family: 'MyFontCyr';
+  src: url('MyFontCyr-Light.eot');
+  src:
+    local('MyFontCyr-Light'),
+    url('MyFontCyr-Light.eot?#iefix') format('embedded-opentype'),
+    url('MyFontCyr-Light.woff2') format('woff2'),
+    url('MyFontCyr-Light.woff') format('woff'),
+    url('MyFontCyr-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'MyFontCyr';
-    src: url('MyFontCyr-Medium.eot');
-    src: local('MyFontCyr-Medium'),
-        url('MyFontCyr-Medium.eot?#iefix') format('embedded-opentype'),
-        url('MyFontCyr-Medium.woff2') format('woff2'),
-        url('MyFontCyr-Medium.woff') format('woff'),
-        url('MyFontCyr-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
+  font-family: 'MyFontCyr';
+  src: url('MyFontCyr-Medium.eot');
+  src:
+    local('MyFontCyr-Medium'),
+    url('MyFontCyr-Medium.eot?#iefix') format('embedded-opentype'),
+    url('MyFontCyr-Medium.woff2') format('woff2'),
+    url('MyFontCyr-Medium.woff') format('woff'),
+    url('MyFontCyr-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'MyFontCyr';
-    src: url('MyFontCyr-MediumItalic.eot');
-    src: local('MyFontCyr-MediumItalic'),
-        url('MyFontCyr-MediumItalic.eot?#iefix') format('embedded-opentype'),
-        url('MyFontCyr-MediumItalic.woff2') format('woff2'),
-        url('MyFontCyr-MediumItalic.woff') format('woff'),
-        url('MyFontCyr-MediumItalic.ttf') format('truetype');
-    font-weight: 500;
-    font-style: italic;
+  font-family: 'MyFontCyr';
+  src: url('MyFontCyr-MediumItalic.eot');
+  src:
+    local('MyFontCyr-MediumItalic'),
+    url('MyFontCyr-MediumItalic.eot?#iefix') format('embedded-opentype'),
+    url('MyFontCyr-MediumItalic.woff2') format('woff2'),
+    url('MyFontCyr-MediumItalic.woff') format('woff'),
+    url('MyFontCyr-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
 }
 
 @font-face {
-    font-family: 'MyFontCyr';
-    src: url('MyFontCyr-LightItalic.eot');
-    src: local('MyFontCyr-LightItalic'),
-        url('MyFontCyr-LightItalic.eot?#iefix') format('embedded-opentype'),
-        url('MyFontCyr-LightItalic.woff2') format('woff2'),
-        url('MyFontCyr-LightItalic.woff') format('woff'),
-        url('MyFontCyr-LightItalic.ttf') format('truetype');
-    font-weight: 300;
-    font-style: italic;
+  font-family: 'MyFontCyr';
+  src: url('MyFontCyr-LightItalic.eot');
+  src:
+    local('MyFontCyr-LightItalic'),
+    url('MyFontCyr-LightItalic.eot?#iefix') format('embedded-opentype'),
+    url('MyFontCyr-LightItalic.woff2') format('woff2'),
+    url('MyFontCyr-LightItalic.woff') format('woff'),
+    url('MyFontCyr-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
 }
 
 @font-face {
-    font-family: 'MyFontCyr';
-    src: url('MyFontCyr-HeavyItalic.eot');
-    src: local('MyFontCyr-HeavyItalic'),
-        url('MyFontCyr-HeavyItalic.eot?#iefix') format('embedded-opentype'),
-        url('MyFontCyr-HeavyItalic.woff2') format('woff2'),
-        url('MyFontCyr-HeavyItalic.woff') format('woff'),
-        url('MyFontCyr-HeavyItalic.ttf') format('truetype');
-    font-weight: 900;
-    font-style: italic;
+  font-family: 'MyFontCyr';
+  src: url('MyFontCyr-HeavyItalic.eot');
+  src:
+    local('MyFontCyr-HeavyItalic'),
+    url('MyFontCyr-HeavyItalic.eot?#iefix') format('embedded-opentype'),
+    url('MyFontCyr-HeavyItalic.woff2') format('woff2'),
+    url('MyFontCyr-HeavyItalic.woff') format('woff'),
+    url('MyFontCyr-HeavyItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
 }
 
 @font-face {
-    font-family: 'MyFontCyr';
-    src: url('MyFontCyr-Black.eot');
-    src: local('MyFontCyr-Black'),
-        url('MyFontCyr-Black.eot?#iefix') format('embedded-opentype'),
-        url('MyFontCyr-Black.woff2') format('woff2'),
-        url('MyFontCyr-Black.woff') format('woff'),
-        url('MyFontCyr-Black.ttf') format('truetype');
-    font-weight: 900;
-    font-style: normal;
+  font-family: 'MyFontCyr';
+  src: url('MyFontCyr-Black.eot');
+  src:
+    local('MyFontCyr-Black'),
+    url('MyFontCyr-Black.eot?#iefix') format('embedded-opentype'),
+    url('MyFontCyr-Black.woff2') format('woff2'),
+    url('MyFontCyr-Black.woff') format('woff'),
+    url('MyFontCyr-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'MyFontCyr';
-    src: url('MyFontCyr-Heavy.eot');
-    src: local('MyFontCyr-Heavy'),
-        url('MyFontCyr-Heavy.eot?#iefix') format('embedded-opentype'),
-        url('MyFontCyr-Heavy.woff2') format('woff2'),
-        url('MyFontCyr-Heavy.woff') format('woff'),
-        url('MyFontCyr-Heavy.ttf') format('truetype');
-    font-weight: 900;
-    font-style: normal;
+  font-family: 'MyFontCyr';
+  src: url('MyFontCyr-Heavy.eot');
+  src:
+    local('MyFontCyr-Heavy'),
+    url('MyFontCyr-Heavy.eot?#iefix') format('embedded-opentype'),
+    url('MyFontCyr-Heavy.woff2') format('woff2'),
+    url('MyFontCyr-Heavy.woff') format('woff'),
+    url('MyFontCyr-Heavy.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'MyFontCyr';
-    src: url('MyFontCyr-Italic.eot');
-    src: local('MyFontCyr-Italic'),
-        url('MyFontCyr-Italic.eot?#iefix') format('embedded-opentype'),
-        url('MyFontCyr-Italic.woff2') format('woff2'),
-        url('MyFontCyr-Italic.woff') format('woff'),
-        url('MyFontCyr-Italic.ttf') format('truetype');
-    font-weight: 500;
-    font-style: italic;
+  font-family: 'MyFontCyr';
+  src: url('MyFontCyr-Italic.eot');
+  src:
+    local('MyFontCyr-Italic'),
+    url('MyFontCyr-Italic.eot?#iefix') format('embedded-opentype'),
+    url('MyFontCyr-Italic.woff2') format('woff2'),
+    url('MyFontCyr-Italic.woff') format('woff'),
+    url('MyFontCyr-Italic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
 }
 
 @font-face {
-    font-family: 'MyFontCyr';
-    src: url('MyFontCyr-Roman.eot');
-    src: local('MyFontCyr-Roman'),
-        url('MyFontCyr-Roman.eot?#iefix') format('embedded-opentype'),
-        url('MyFontCyr-Roman.woff2') format('woff2'),
-        url('MyFontCyr-Roman.woff') format('woff'),
-        url('MyFontCyr-Roman.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'MyFontCyr';
+  src: url('MyFontCyr-Roman.eot');
+  src:
+    local('MyFontCyr-Roman'),
+    url('MyFontCyr-Roman.eot?#iefix') format('embedded-opentype'),
+    url('MyFontCyr-Roman.woff2') format('woff2'),
+    url('MyFontCyr-Roman.woff') format('woff'),
+    url('MyFontCyr-Roman.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'MyFontCyr';
-    src: url('MyFontCyr-BlackItalic.eot');
-    src: local('MyFontCyr-BlackItalic'),
-        url('MyFontCyr-BlackItalic.eot?#iefix') format('embedded-opentype'),
-        url('MyFontCyr-BlackItalic.woff2') format('woff2'),
-        url('MyFontCyr-BlackItalic.woff') format('woff'),
-        url('MyFontCyr-BlackItalic.ttf') format('truetype');
-    font-weight: 900;
-    font-style: italic;
+  font-family: 'MyFontCyr';
+  src: url('MyFontCyr-BlackItalic.eot');
+  src:
+    local('MyFontCyr-BlackItalic'),
+    url('MyFontCyr-BlackItalic.eot?#iefix') format('embedded-opentype'),
+    url('MyFontCyr-BlackItalic.woff2') format('woff2'),
+    url('MyFontCyr-BlackItalic.woff') format('woff'),
+    url('MyFontCyr-BlackItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
 }
 
 @font-face {
-    font-family: 'MyFontCyr';
-    src: url('MyFontCyr-UltraLightItalic.eot');
-    src: local('MyFontCyr-UltraLightItalic'),
-        url('MyFontCyr-UltraLightItalic.eot?#iefix') format('embedded-opentype'),
-        url('MyFontCyr-UltraLightItalic.woff2') format('woff2'),
-        url('MyFontCyr-UltraLightItalic.woff') format('woff'),
-        url('MyFontCyr-UltraLightItalic.ttf') format('truetype');
-    font-weight: 200;
-    font-style: italic;
+  font-family: 'MyFontCyr';
+  src: url('MyFontCyr-UltraLightItalic.eot');
+  src:
+    local('MyFontCyr-UltraLightItalic'),
+    url('MyFontCyr-UltraLightItalic.eot?#iefix') format('embedded-opentype'),
+    url('MyFontCyr-UltraLightItalic.woff2') format('woff2'),
+    url('MyFontCyr-UltraLightItalic.woff') format('woff'),
+    url('MyFontCyr-UltraLightItalic.ttf') format('truetype');
+  font-weight: 200;
+  font-style: italic;
 }
 
 @font-face {
-    font-family: 'MyFontCyr';
-    src: url('MyFontCyr-BoldItalic.eot');
-    src: local('MyFontCyr-BoldItalic'),
-        url('MyFontCyr-BoldItalic.eot?#iefix') format('embedded-opentype'),
-        url('MyFontCyr-BoldItalic.woff2') format('woff2'),
-        url('MyFontCyr-BoldItalic.woff') format('woff'),
-        url('MyFontCyr-BoldItalic.ttf') format('truetype');
-    font-weight: bold;
-    font-style: italic;
+  font-family: 'MyFontCyr';
+  src: url('MyFontCyr-BoldItalic.eot');
+  src:
+    local('MyFontCyr-BoldItalic'),
+    url('MyFontCyr-BoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('MyFontCyr-BoldItalic.woff2') format('woff2'),
+    url('MyFontCyr-BoldItalic.woff') format('woff'),
+    url('MyFontCyr-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
 }
 
 @font-face {
-    font-family: 'MyFontCyr';
-    src: url('MyFontCyr-ThinItalic.eot');
-    src: local('MyFontCyr-ThinItalic'),
-        url('MyFontCyr-ThinItalic.eot?#iefix') format('embedded-opentype'),
-        url('MyFontCyr-ThinItalic.woff2') format('woff2'),
-        url('MyFontCyr-ThinItalic.woff') format('woff'),
-        url('MyFontCyr-ThinItalic.ttf') format('truetype');
-    font-weight: 100;
-    font-style: italic;
+  font-family: 'MyFontCyr';
+  src: url('MyFontCyr-ThinItalic.eot');
+  src:
+    local('MyFontCyr-ThinItalic'),
+    url('MyFontCyr-ThinItalic.eot?#iefix') format('embedded-opentype'),
+    url('MyFontCyr-ThinItalic.woff2') format('woff2'),
+    url('MyFontCyr-ThinItalic.woff') format('woff'),
+    url('MyFontCyr-ThinItalic.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
 }
 
 @font-face {
-    font-family: 'MyFontCyr';
-    src: url('MyFontCyr-UltraLight.eot');
-    src: local('MyFontCyr-UltraLight'),
-        url('MyFontCyr-UltraLight.eot?#iefix') format('embedded-opentype'),
-        url('MyFontCyr-UltraLight.woff2') format('woff2'),
-        url('MyFontCyr-UltraLight.woff') format('woff'),
-        url('MyFontCyr-UltraLight.ttf') format('truetype');
-    font-weight: 200;
-    font-style: normal;
+  font-family: 'MyFontCyr';
+  src: url('MyFontCyr-UltraLight.eot');
+  src:
+    local('MyFontCyr-UltraLight'),
+    url('MyFontCyr-UltraLight.eot?#iefix') format('embedded-opentype'),
+    url('MyFontCyr-UltraLight.woff2') format('woff2'),
+    url('MyFontCyr-UltraLight.woff') format('woff'),
+    url('MyFontCyr-UltraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'MyFontCyr';
-    src: url('MyFontCyr-Thin.eot');
-    src: local('MyFontCyr-Thin'),
-        url('MyFontCyr-Thin.eot?#iefix') format('embedded-opentype'),
-        url('MyFontCyr-Thin.woff2') format('woff2'),
-        url('MyFontCyr-Thin.woff') format('woff'),
-        url('MyFontCyr-Thin.ttf') format('truetype');
-    font-weight: 100;
-    font-style: normal;
+  font-family: 'MyFontCyr';
+  src: url('MyFontCyr-Thin.eot');
+  src:
+    local('MyFontCyr-Thin'),
+    url('MyFontCyr-Thin.eot?#iefix') format('embedded-opentype'),
+    url('MyFontCyr-Thin.woff2') format('woff2'),
+    url('MyFontCyr-Thin.woff') format('woff'),
+    url('MyFontCyr-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
 }
-

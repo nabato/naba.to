@@ -1,8 +1,8 @@
-import NextImage, {ImageProps} from "next/image"
-import { useMDXComponent } from "next-contentlayer/hooks"
+import NextImage, { ImageProps } from 'next/image'
+import { useMDXComponent } from 'next-contentlayer/hooks'
 
 const components = {
-  Image: (props: ImageProps) => <NextImage {...props} />,
+  Image: (props: ImageProps) => <NextImage {...props} />
 }
 
 interface MdxProps {

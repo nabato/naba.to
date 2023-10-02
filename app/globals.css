@@ -3,13 +3,13 @@
 @tailwind utilities;
 
 .about-photo {
-    width: 20%;
-    height: auto;
-    margin-bottom: 0;
+  width: 20%;
+  height: auto;
+  margin-bottom: 0;
 }
 
 @media (max-width: 440px) {
-    .about-photo {
-        width: 30%;
-    }
+  .about-photo {
+    width: 30%;
+  }
 }
