@@ -1,10 +1,12 @@
 import Link from "next/link"
-import "./globals.css"
+import Script from 'next/script'
 import {Inter} from "next/font/google"
 import {ThemeProvider} from "@/components/theme-provider"
 import {Analytics} from "@/components/analytics"
 import {ModeToggle} from "@/components/mode-toggle"
 import React from "react";
+
+import "./globals.css"
 
 const inter = Inter({subsets: ["latin"]})
 
@@ -19,6 +21,21 @@ interface RootLayoutProps {
 
 export default function RootLayout({children}: RootLayoutProps) {
     return (<html lang="en">
+        <Script strategy="afterInteractive" src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GOOGLE_ANALYTICS_MEASUREMENT_ID}`}/>
+        <Script
+            id='google-analytics'
+            strategy="afterInteractive"
+            dangerouslySetInnerHTML={{
+                __html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', ${process.env.GOOGLE_ANALYTICS_MEASUREMENT_ID}, {
+            page_path: window.location.pathname,
+          });
+        `,
+            }}
+        />
     <body
         className={`antialiased min-h-screen bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-50 ${inter.className}`}
     >
