@@ -2,8 +2,8 @@ import { GithubSocialIcon, LinkedIn } from "@/components/social-links";
 
 export const Footer = () => {
   return (
-    <footer className="flex justify-between container mx-auto py-2 tracking-tight m-2">
-      <p className="prose py-2 flex flex-wrap">
+    <footer className="prose dark:prose-invert flex justify-between container py-2 tracking-tight my-2">
+      <p className="py-2 flex flex-wrap">
         <div>
           © 2023 &nbsp;
           <a className="hover:underline" href="/">
