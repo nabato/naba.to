@@ -38,6 +38,5 @@ next-env.d.ts
 # intellij
 /.idea/
 
-# enviroment variables
-!/.env.local
+# lock files
 !/pnpm-lock.yaml
