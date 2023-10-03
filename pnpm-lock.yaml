@@ -14,6 +14,12 @@ overrides:
   '@opentelemetry/semantic-conventions': 1.13.0
 
 dependencies:
+  '@geist-ui/core':
+    specifier: ^2.3.8
+    version: 2.3.8(react-dom@18.2.0)(react@18.2.0)
+  '@geist-ui/prism':
+    specifier: ^1.1.1
+    version: 1.1.1(@geist-ui/core@2.3.8)
   '@tailwindcss/typography':
     specifier: ^0.5.10
     version: 0.5.10(tailwindcss@3.3.3)
@@ -522,6 +528,25 @@ packages:
 
   /@fal-works/esbuild-plugin-global-externals@2.1.2:
     resolution: {integrity: sha512-cEee/Z+I12mZcFJshKcCqC8tuX5hG3s+d+9nZ3LabqKF1vKdF41B92pJVCBggjAGORAeOzyyDDKrZwIkLffeOQ==}
+    dev: false
+
+  /@geist-ui/core@2.3.8(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-OKwGgTA4+fBM41eQbqDoUj4XBycZbYH7Ynrn6LPO5yKX7zeWPu/R7HN3vB4/oHt34VTDQI5sDNb1SirHvNyB5w==}
+    peerDependencies:
+      react: '>=16.9.0'
+      react-dom: '>=16.9.0'
+    dependencies:
+      '@babel/runtime': 7.23.1
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: false
+
+  /@geist-ui/prism@1.1.1(@geist-ui/core@2.3.8):
+    resolution: {integrity: sha512-ALb2yltdhPkzEF6XE1lN+65BYCtqiP59KOPW0ip/EHCGjifN/B6C9+fokXp5zrDVrvnBt76WJXFeoRN6YQVIFg==}
+    peerDependencies:
+      '@geist-ui/core': '>=2.2.5'
+    dependencies:
+      '@geist-ui/core': 2.3.8(react-dom@18.2.0)(react@18.2.0)
     dev: false
 
   /@grpc/grpc-js@1.9.5:

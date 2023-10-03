@@ -15,9 +15,9 @@ export const Footer = () => {
           </div>
           &nbsp;
           <div>
-            The site is &nbsp;
+            Licensed under the &nbsp;
             <a className="hover:underline" href="https://github.com/nabato/naba.to/blob/main/LICENSE">
-              MIT Licensed
+              MIT License
             </a>
             .
           </div>

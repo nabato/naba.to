@@ -21,6 +21,8 @@
     }
   },
   "dependencies": {
+    "@geist-ui/core": "^2.3.8",
+    "@geist-ui/prism": "^1.1.1",
     "@tailwindcss/typography": "^0.5.10",
     "@types/node": "^20.8.0",
     "@types/react": "^18.2.24",
