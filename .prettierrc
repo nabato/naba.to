@@ -1,5 +1,20 @@
 {
+  "arrowParens": "avoid",
+  "bracketSameLine": true,
+  "bracketSpacing": true,
+  "printWidth": 120,
+
+
+
   "semi": false,
   "singleQuote": true,
-  "trailingComma": "none"
+  "trailingComma": "none",
+  "overrides": [
+    {
+      "files": "{**/*,*}.{html,jsx,tsx,vue}",
+      "options": {
+        "printWidth": 150
+      }
+    }
+  ]
 }

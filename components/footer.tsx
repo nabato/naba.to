@@ -2,7 +2,7 @@ import { GithubSocialIcon, LinkedIn } from '@/components/social-links'
 
 export const Footer = () => {
   return (
-    <footer className="prose dark:prose-invert flex justify-between container py-2 tracking-tight my-2">
+    <footer className="prose prose-stone dark:prose-invert flex justify-between container py-2 tracking-tight my-2">
       <p className="py-2 flex">
         <div>©&nbsp;</div>
         <div className="flex flex-wrap">
@@ -16,10 +16,7 @@ export const Footer = () => {
           &nbsp;
           <div>
             The site is &nbsp;
-            <a
-              className="hover:underline"
-              href="https://github.com/nabato/naba.to/blob/main/LICENSE"
-            >
+            <a className="hover:underline" href="https://github.com/nabato/naba.to/blob/main/LICENSE">
               MIT Licensed
             </a>
             .

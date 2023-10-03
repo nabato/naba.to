@@ -112,23 +112,12 @@ interface RootLayoutProps {
 
 export default function RootLayout({ children }: RootLayoutProps) {
   const htmlClass = cn(myFont.variable, 'font-sans')
-  const bodyClass = cn(
-    'antialiased',
-    'min-h-[100svh]',
-    'bg-white',
-    'dark:bg-slate-950',
-    'text-slate-900',
-    'dark:text-slate-50'
-  )
-  const topWrapperClass = cn(
-    'flex flex-col max-w-2xl mx-auto pt-10 sm:pb-10 px-4 min-h-[100svh]'
-  )
+  const bodyClass = cn('antialiased', 'min-h-[100svh]', 'bg-white', 'dark:bg-stone-950', 'text-stone-900', 'dark:text-stone-50')
+  const topWrapperClass = cn('flex flex-col max-w-2xl mx-auto pt-10 sm:pb-10 px-4 min-h-[100svh]')
+
   return (
     <html lang="en" className={htmlClass}>
-      <Script
-        strategy="afterInteractive"
-        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GOOGLE_ANALYTICS_MEASUREMENT_ID}`}
-      />
+      <Script strategy="afterInteractive" src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GOOGLE_ANALYTICS_MEASUREMENT_ID}`} />
       <Script
         id="google-analytics"
         strategy="afterInteractive"
@@ -147,28 +136,10 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <link rel="manifest" href="/site.webmanifest" />
         <meta name="msapplication-config" content="/browserconfig.xml" />
         <meta name="msapplication-TileColor" content="#ddc5ab" />
-        <link
-          rel="apple-touch-icon"
-          sizes="180x180"
-          href="/favicons/apple-touch-icon.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="32x32"
-          href="/favicons/favicon-32x32.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="16x16"
-          href="/favicons/favicon-16x16.png"
-        />
-        <link
-          rel="mask-icon"
-          href="/favicons/safari-pinned-tab.svg"
-          color="#5bbad5"
-        />
+        <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
+        <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#5bbad5" />
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <div className={topWrapperClass}>
             <header>

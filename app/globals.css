@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --primary-dark: #000;
+  --selection-background: #B4D5FE;
+}
+
+::selection {
+  background: var(--selection-background);
+  color: var(--primary-dark);
+}
+
 .about-photo {
   width: 20%;
   height: auto;
