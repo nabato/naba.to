@@ -2,7 +2,7 @@ import { GithubSocialIcon, LinkedIn } from '@/components/social-links'
 
 export const Footer = () => {
   return (
-    <footer className="prose prose-stone dark:prose-invert flex justify-between container py-2 tracking-tight my-2">
+    <footer className="prose prose-stone dark:prose-invert flex justify-between container py-2 tracking-tight my-2 text-sm font-medium">
       <p className="py-2 flex">
         <div>©&nbsp;</div>
         <div className="flex flex-wrap">
