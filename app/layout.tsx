@@ -114,14 +114,14 @@ export default function RootLayout({ children }: RootLayoutProps) {
   const htmlClass = cn(myFont.variable, 'font-sans')
   const bodyClass = cn(
     'antialiased',
-    'min-h-screen',
+    'min-h-[100svh]',
     'bg-white',
     'dark:bg-slate-950',
     'text-slate-900',
     'dark:text-slate-50'
   )
   const topWrapperClass = cn(
-    'flex flex-col max-w-2xl mx-auto pt-10 sm:pb-10 px-4 min-h-screen'
+    'flex flex-col max-w-2xl mx-auto pt-10 sm:pb-10 px-4 min-h-[100svh]'
   )
   return (
     <html lang="en" className={htmlClass}>
@@ -170,7 +170,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           color="#5bbad5"
         />
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <div className="flex flex-col max-w-2xl mx-auto pt-10 sm:pb-10 px-4 min-h-screen">
+          <div className={topWrapperClass}>
             <header>
               <div className="flex items-center justify-between">
                 <ModeToggle />
