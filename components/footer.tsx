@@ -18,7 +18,7 @@ export const Footer = () => {
             The site is &nbsp;
             <a
               className="hover:underline"
-              href="https://opensource.org/license/mit"
+              href="https://github.com/nabato/naba.to/blob/main/LICENSE"
             >
               MIT Licensed
             </a>
