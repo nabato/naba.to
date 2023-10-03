@@ -20,21 +20,6 @@ module.exports = {
   ],
   darkMode: ['class'],
   theme: {
-    colors: {
-      'steel-blue': {
-        50: '#f3f7fb',
-        100: '#e4edf5',
-        200: '#cfe0ee',
-        300: '#adcbe3',
-        400: '#86b0d4',
-        500: '#6996c8',
-        600: '#6086be',
-        700: '#4b6daa',
-        800: '#425a8b',
-        900: '#394c6f',
-        950: '#263045'
-      }
-    },
     extend: {
       fontFamily: {
         sans: ['var(--my-font)']

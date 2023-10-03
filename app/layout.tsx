@@ -112,7 +112,13 @@ interface RootLayoutProps {
 
 export default function RootLayout({ children }: RootLayoutProps) {
   const htmlClass = cn(myFont.variable, 'font-sans')
-  const bodyClass = cn('antialiased', 'min-h-[100svh]', 'bg-white', 'dark:bg-stone-950', 'text-stone-900', 'dark:text-stone-50')
+  const bodyClass = cn(
+    'antialiased',
+    'min-h-[100svh]',
+    'dark:bg-stone-950',
+    'selection:bg-[var(--selection-background)]',
+    'dark:selection:text-stone-950'
+  )
   const topWrapperClass = cn('flex flex-col max-w-2xl mx-auto pt-10 sm:pb-10 px-4 min-h-[100svh]')
 
   return (
