@@ -1,7 +1,6 @@
 import Link from 'next/link'
 import Script from 'next/script'
 import localFont from 'next/font/local'
-import { Inter } from 'next/font/google'
 import { ThemeProvider } from '@/components/theme-provider'
 import { Analytics } from '@/components/analytics'
 import { ModeToggle } from '@/components/mode-toggle'
@@ -10,8 +9,6 @@ import React from 'react'
 import cn from 'classnames/dedupe'
 
 import './globals.css'
-
-// const inter = Inter({ subsets: ["latin"] });
 
 const myFont = localFont({
   src: [
