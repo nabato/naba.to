@@ -119,7 +119,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
     'selection:bg-[var(--selection-background)]',
     'dark:selection:text-stone-950'
   )
-  const topWrapperClass = cn('flex flex-col max-w-2xl mx-auto pt-10 sm:pb-10 px-4 min-h-[100svh]')
+  const topWrapperClass = cn('flex flex-col max-w-2xl mx-auto pt-10 sm:pb-10 px-6 min-h-[100svh]')
 
   return (
     <html lang="en" className={htmlClass}>
