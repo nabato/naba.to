@@ -2,6 +2,7 @@ import Link from 'next/link'
 import Script from 'next/script'
 import localFont from 'next/font/local'
 import { ThemeProvider } from '@/components/theme-provider'
+import { useTheme } from 'next-themes'
 import { Analytics } from '@/components/analytics'
 import { ModeToggle } from '@/components/mode-toggle'
 import { Footer } from '@/components/footer'
@@ -152,7 +153,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
               <div className="flex items-center justify-between">
                 <ModeToggle />
                 <nav className="ml-auto text-sm font-medium">
-                  <div className="space-x-6 align-middle mt-[3px]">
+                  <div className="space-x-6 align-middle">
                     <Link className="inline-block h-full" href="/">
                       Home
                     </Link>
