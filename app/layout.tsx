@@ -149,7 +149,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#5bbad5" />
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <div className={topWrapperClass}>
-            <header>
+            <header className="prose prose-stone bg:prose-invert">
               <div className="flex items-center justify-between">
                 <ModeToggle />
                 <nav className="ml-auto text-sm font-medium">
