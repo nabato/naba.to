@@ -103,7 +103,7 @@ const myFont = localFont({
 })
 
 export const metadata = {
-  title: "Vladislav's blog.",
+  title: "Vladislav Nabatov's blog.",
   description: 'Mostly about programming.'
 }
 
