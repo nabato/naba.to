@@ -1,8 +1,10 @@
 import { notFound } from 'next/navigation'
+import Script from 'next/script'
 import { allPosts } from 'contentlayer/generated'
 
 import { Metadata } from 'next'
 import { Mdx } from '@/components/mdx-components'
+import React from 'react'
 
 interface PostProps {
   params: {

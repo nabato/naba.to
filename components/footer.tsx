@@ -23,14 +23,6 @@ export const Footer = () => {
           </div>
         </div>
       </p>
-      {/*<ul className="flex items-center py-2 gap-2">*/}
-      {/*  <li>*/}
-      {/*    <LinkedIn />*/}
-      {/*  </li>*/}
-      {/*  <li>*/}
-      {/*    <GithubSocialIcon />*/}
-      {/*  </li>*/}
-      {/*</ul>*/}
     </footer>
   )
 }

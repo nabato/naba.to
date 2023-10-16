@@ -2,11 +2,10 @@ import Link from 'next/link'
 import Script from 'next/script'
 import localFont from 'next/font/local'
 import { ThemeProvider } from '@/components/theme-provider'
-import { useTheme } from 'next-themes'
 import { Analytics } from '@/components/analytics'
 import { ModeToggle } from '@/components/mode-toggle'
 import { Footer } from '@/components/footer'
-import React from 'react'
+import React, { Fragment } from 'react'
 import cn from 'classnames/dedupe'
 
 import './globals.css'
@@ -102,7 +101,7 @@ const myFont = localFont({
   variable: '--my-font'
 })
 
-export const metadata = {
+const metadata = {
   title: "Vladislav Nabatov's blog.",
   description: 'Mostly about programming.'
 }
@@ -140,6 +139,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         }}
       />
       <body className={bodyClass}>
+        <link rel="stylesheet" type="text/css" href="https://storage.googleapis.com/app.klipse.tech/css/codemirror.css" />
         <link rel="manifest" href="/site.webmanifest" />
         <meta name="msapplication-config" content="/browserconfig.xml" />
         <meta name="msapplication-TileColor" content="#ddc5ab" />
@@ -152,16 +152,16 @@ export default function RootLayout({ children }: RootLayoutProps) {
             <header>
               <div className="flex items-center justify-between">
                 <ModeToggle />
-                <nav className="ml-auto text-sm font-medium">
-                  <div className="space-x-6 align-middle">
-                    <Link className="inline-block h-full" href="/">
-                      Home
-                    </Link>
-                    <Link className="inline-block h-full" href="/about">
-                      About
-                    </Link>
-                  </div>
-                </nav>
+                {/*<nav className="ml-auto text-sm font-medium">*/}
+                {/*  <div className="space-x-6 align-middle">*/}
+                {/*    <Link className="inline-block h-full" href="/">*/}
+                {/*      Home*/}
+                {/*    </Link>*/}
+                {/*    <Link className="inline-block h-full" href="/about">*/}
+                {/*      About*/}
+                {/*    </Link>*/}
+                {/*  </div>*/}
+                {/*</nav>*/}
               </div>
             </header>
             <main className="grow">{children}</main>
@@ -169,6 +169,16 @@ export default function RootLayout({ children }: RootLayoutProps) {
           </div>
           <Analytics />
         </ThemeProvider>
+        {/*<Script*/}
+        {/*  id={'klipse-settings'}*/}
+        {/*  strategy={'beforeInteractive'}*/}
+        {/*  dangerouslySetInnerHTML={{*/}
+        {/*    __html: `window.klipse_settings = {*/}
+        {/*selector_eval_js: '.language-eval-js' // css selector for the html elements you want to klipsify */}
+        {/*}`*/}
+        {/*  }}*/}
+        {/*/>*/}
+        {/*<Script src="https://storage.googleapis.com/app.klipse.tech/plugin_prod/js/klipse_plugin.min.js" />*/}
       </body>
     </html>
   )

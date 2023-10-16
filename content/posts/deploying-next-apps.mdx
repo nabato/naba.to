@@ -101,7 +101,7 @@ I think most people are going to use [highlight.js](https://highlightjs.org/) or
 
 Here's what a default `tailwind.config.js` file looks like at the time of writing:
 
-```js
+```eval-js
 module.exports = {
   purge: [],
   theme: {
@@ -110,6 +110,23 @@ module.exports = {
   variants: {},
   plugins: []
 }
+```
+
+```eval-js
+[1, 2, 3].map(function(x) { return x + 1; })
+```
+
+```jsx
+import { GeistProvider, CSSBaseline } from '@geist-ui/core'
+import { PrismBaseline } from '@geist-ui/prism'
+
+const app = () => (
+  <GeistProvider>
+    <CSSBaseline />
+    <PrismBaseline />
+    <YourAppComponent />
+  </GeistProvider>
+)
 ```
 
 Hopefully that looks good enough to you.
