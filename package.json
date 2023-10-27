@@ -9,7 +9,6 @@
     "start": "next start",
     "lint": "next lint"
   },
-  "packageManager": "pnpm@latest",
   "pnpm": {
     "overrides": {
       "@opentelemetry/api": "1.4.1",
