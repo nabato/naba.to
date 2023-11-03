@@ -1,11 +1,10 @@
-import Link from 'next/link'
 import Script from 'next/script'
 import localFont from 'next/font/local'
-import { ThemeProvider } from '@/components/theme-provider'
-import { Analytics } from '@/components/analytics'
-import { ModeToggle } from '@/components/mode-toggle'
-import { Footer } from '@/components/footer'
-import React, { Fragment } from 'react'
+import { ThemeProvider } from '../components/theme-provider'
+import { Analytics } from '../components/analytics'
+import { ModeToggle } from '../components/mode-toggle'
+import { Footer } from '../components/footer'
+import React from 'react'
 import cn from 'classnames/dedupe'
 
 import './globals.css'
@@ -106,11 +105,7 @@ const metadata = {
   description: 'Mostly about programming.'
 }
 
-interface RootLayoutProps {
-  children: React.ReactNode
-}
-
-export default function RootLayout({ children }: RootLayoutProps) {
+export default function RootLayout({ children }) {
   const htmlClass = cn(myFont.variable, 'font-sans')
   const bodyClass = cn(
     'antialiased',

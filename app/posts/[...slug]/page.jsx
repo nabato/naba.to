@@ -1,18 +1,10 @@
 import { notFound } from 'next/navigation'
-import Script from 'next/script'
 import { allPosts } from 'contentlayer/generated'
 
-import { Metadata } from 'next'
 import { Mdx } from '@/components/mdx-components'
 import React from 'react'
 
-interface PostProps {
-  params: {
-    slug: string[]
-  }
-}
-
-async function getPostFromParams(params: PostProps['params']) {
+async function getPostFromParams(params) {
   const slug = params?.slug?.join('/')
   const post = allPosts.find(post => post.slugAsParams === slug)
 
@@ -23,7 +15,7 @@ async function getPostFromParams(params: PostProps['params']) {
   return post
 }
 
-export async function generateMetadata({ params }: PostProps): Promise<Metadata> {
+export async function generateMetadata({ params }) {
   const post = await getPostFromParams(params)
 
   if (!post) {
@@ -36,13 +28,13 @@ export async function generateMetadata({ params }: PostProps): Promise<Metadata>
   }
 }
 
-export async function generateStaticParams(): Promise<PostProps['params'][]> {
+export async function generateStaticParams() {
   return allPosts.map(post => ({
     slug: post.slugAsParams.split('/')
   }))
 }
 
-export default async function PostPage({ params }: PostProps) {
+export default async function PostPage({ params }) {
   const post = await getPostFromParams(params)
 
   if (!post) {

@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation'
-import { allPages } from 'contentlayer/generated'
+import { allPages } from '../../.contentlayer/generated'
 
-import { Mdx } from '@/components/mdx-components'
+import { Mdx } from '../../components/mdx-components'
 
 async function getPageFromParams(params) {
   const slug = params?.slug?.join('/')

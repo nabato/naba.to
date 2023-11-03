@@ -12,12 +12,7 @@ const hexToRgb = hex => {
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    './app/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './pages/**/*.{js,ts,jsx,tsx}',
-    './content/**/*.{md,mdx}'
-  ],
+  content: ['./app/**/*.{js,jsx}', './components/**/*.{js,jsx}', './pages/**/*.{js,jsx}', './content/**/*.{md,mdx}'],
   darkMode: ['class'],
   theme: {
     extend: {
